@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body onkeyup="$key(event)">
+    <main>
+      <section class="calculator">
+        <div class="first-section">
+          <div>
+            <div>
+              <span></span><span></span><span></span><span></span><span></span
+              ><span></span><span></span><span></span><span></span><span></span
+              ><span></span><span></span><span></span><span></span><span></span
+              ><span></span><span></span><span></span><span></span><span></span
+              ><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+          <!-- **** -->
+          <div><p>Электроника С3-22</p></div>
+        </div>
+        <!-- **************************************************************************** -->
+        <section class="second-section">
+          <div>
+            <div>
+              <div class="lcd-screen">
+                88888888888888
+                <p id="result">0.0</p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <!-- ***************************************************** -->
+          <div>
+            <div class="left-keyboard">
+              <div class="red" id="btn-reset"><p>c</p></div>
+              <div id="btn-reset-last-action"><p>ce</p></div>
+              <div id="btn-backspace"><p>&lt;&lt;</p></div>
+            </div>
+            <!-- ****** -->
+            <div class="center-keyboard">
+              <div id="seven" onclick="para(7)"><p>7</p></div>
+              <div id="eight" onclick="para(8)"><p>8</p></div>
+              <div id="nine" onclick="para(9)"><p>9</p></div>
+              <div id="four" onclick="para(4)"><p>4</p></div>
+              <div id="five" onclick="para(5)"><p>5</p></div>
+              <div id="six" onclick="para(6)"><p>6</p></div>
+              <div id="one" onclick="para(1)"><p>1</p></div>
+              <div id="two" onclick="para(2)"><p>2</p></div>
+              <div id="three" onclick="para(3)"><p>3</p></div>
+              <div id="zero" onclick="para(0)"><p>0</p></div>
+              <div id="point"><p onclick="para('.')">.</p></div>
+            </div>
+            <!-- ***** -->
+            <div class="right-keyboard">
+              <div id="plus"><p onclick="para('+')">+</p></div>
+              <div><p id="btn-percent">%</p></div>
+              <div id="minus"><p onclick="para('-')">-</p></div>
+              <div><p id="btn-pn">+-</p></div>
+              <div id="mul"><p onclick="para('*')">×</p></div>
+              <div id="eequal"><p id="equal">=</p></div>
+              <div id="div"><p onclick="para('/')">÷</p></div>
+            </div>
+          </div>
+        </section>
+        <!-- ************************************************************************************** -->
+        <section class="last-section"></section>
+        <!-- ****************** -->
+      </section>
+    </main>
+  </body>
+  <script src="js/master.js"></script>
+</html>
+
+
+<!-- Developer : Amir Hossein Zandi
+Gmail : blackviper933@gmail.com
+Phone number : +989372845586
+
+good luck :) -->
